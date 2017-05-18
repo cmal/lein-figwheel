@@ -1,10 +1,10 @@
-(defproject figwheel-sidecar "0.5.10"
+(defproject figwheel-sidecar-cmal "0.5.10-SNAPSHOT"
   :description "ClojureScript Autobuilder/Server which pushes changed files to the browser."
-  :url "https://github.com/bhauman/lein-figwheel"
+  :url "https://github.com/cmal/lein-figwheel"
   :license {:name "Eclipse Public License - v 1.0"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :scm {:name "git"
-        :url "https://github.com/bhauman/lein-figwheel"
+        :url "https://github.com/cmal/lein-figwheel"
         :dir ".."}
   :dependencies
   [[org.clojure/clojure "1.8.0"]
@@ -24,7 +24,7 @@
    [figwheel "0.5.10"
       :exclusions [org.clojure/tools.reader]]
    [hawk "0.2.11" :exclusions [org.clojure/clojure]]
-   [clj-http                "1.1.2"]
+   [clj-http "1.1.2"]
 
    [org.clojure/tools.nrepl "0.2.12"]
    ;; for config validation
@@ -40,7 +40,7 @@
              :repl {:plugins [[cider/cider-nrepl "0.11.0"]]
                     :source-paths ["cljs_src" "src"]
                     :resource-paths ["resources" "dev-resources"]
-                    :repl-options {:init-ns figwheel-sidecar.repl-api}}}
+                    :repl-options {:init-ns figwheel-sidecar-cmal.repl-api}}}
 
   :cljsbuild {
              :builds
@@ -68,5 +68,4 @@
                            :optimizations :simple}
                }]
               }
-
   )

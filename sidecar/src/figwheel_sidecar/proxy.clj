@@ -1,3 +1,4 @@
+;; NOTE: The code here are stolen from https://github.com/tailrecursion/ring-proxy .
 (ns figwheel-sidecar.proxy
   (:import
    [java.net URI] )
