@@ -24,7 +24,7 @@
    [figwheel "0.5.10"
       :exclusions [org.clojure/tools.reader]]
    [hawk "0.2.11" :exclusions [org.clojure/clojure]]
-   [clj-http "1.1.2"]
+   [clj-http "3.5.0"]
 
    [org.clojure/tools.nrepl "0.2.12"]
    ;; for config validation
