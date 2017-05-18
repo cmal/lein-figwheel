@@ -3,6 +3,7 @@
    [figwheel-sidecar.config :as config]
    [figwheel-sidecar.utils :as utils :refer [bind-logging]]
    [figwheel-sidecar.build-utils :as butils]
+   [figwheel-sidecar.proxy :refer [wrap-proxy]]
 
    [clojure.string :as string]
    [clojure.java.io :as io]
@@ -222,6 +223,7 @@
      (cors/wrap-cors
       :access-control-allow-origin #".*"
       :access-control-allow-methods [:head :options :get :put :post :delete :patch])
+     (wrap-proxy "/p/www" "https://www.joudou.com/stockinfogate")
      (log-output-to-figwheel-server-log log-writer)
      (run-server (let [config {:port server-port :worker-name-prefix "figwh-httpkit-"}]
                    (if server-ip
