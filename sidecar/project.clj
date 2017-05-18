@@ -1,4 +1,4 @@
-(defproject figwheel-sidecar-cmal "0.5.10-SNAPSHOT"
+(defproject figwheel-sidecar "0.5.10-SNAPSHOT"
   :description "ClojureScript Autobuilder/Server which pushes changed files to the browser."
   :url "https://github.com/cmal/lein-figwheel"
   :license {:name "Eclipse Public License - v 1.0"
@@ -40,7 +40,7 @@
              :repl {:plugins [[cider/cider-nrepl "0.11.0"]]
                     :source-paths ["cljs_src" "src"]
                     :resource-paths ["resources" "dev-resources"]
-                    :repl-options {:init-ns figwheel-sidecar-cmal.repl-api}}}
+                    :repl-options {:init-ns figwheel-sidecar.repl-api}}}
 
   :cljsbuild {
              :builds
