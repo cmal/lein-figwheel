@@ -1,4 +1,4 @@
-(defproject figwheel-sidecar "0.5.10-SNAPSHOT"
+(defproject org.clojars.cmal/figwheel-sidecar "0.5.10-SNAPSHOT"
   :description "ClojureScript Autobuilder/Server which pushes changed files to the browser."
   :url "https://github.com/cmal/lein-figwheel"
   :license {:name "Eclipse Public License - v 1.0"
